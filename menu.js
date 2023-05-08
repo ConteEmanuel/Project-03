@@ -1,4 +1,4 @@
-const arrayMenu =["Paint","Change","More",]
+const arrayMenu =["paint","change","more",]
 const menuContainer = document.createElement('div')
 document.body.append(menuContainer)
 menuContainer.classList.add("menu")
@@ -10,5 +10,6 @@ button.textContent=element
 if (element == arrayMenu[1]){
     button.classList.add("secondButton");
 }
+button.setAttribute('id', (element+"Menu"))
 button.classList.add("button")
 });
