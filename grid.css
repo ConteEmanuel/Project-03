@@ -1,9 +1,11 @@
 .cellContainer{
     box-sizing: border-box;
-    border: 0.5px solid #1d1c1c;
+    display: flex;
+    flex-wrap: wrap;
+    width: 220px;
 }
 .cell{
     box-sizing: border-box;
-    border: 0.5px solid #888888;
+    border: 0.2px solid red;
     background-color: #ffffff;
 }
