@@ -25,6 +25,6 @@ function rightClickMenu (){
 //        menuBuilder();
 }
 }
-
+menuContainer.style.left="-100px";
 menuBuilder();
 rightClickMenu();
