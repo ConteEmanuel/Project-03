@@ -1,9 +1,12 @@
-const arrayMenu =["Paint","More","Change"];
-const menuContainer = document.createElement('div');
-document.body.append(menuContainer);
+const arrayMenu =["Paint","More","Change"]
+const menuContainer = document.createElement('div')
+document.body.append(menuContainer)
+menuContainer.classList.add("menu")
 
 arrayMenu.forEach(element => {
-const div = document.createElement('div')
-menuContainer.append(div)
+const button = document.createElement('div')
+menuContainer.appendChild(button)
+button.textContent=element
+button.classList.add("button")
 });
 
