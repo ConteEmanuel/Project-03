@@ -16,10 +16,12 @@ button.setAttribute('id', (element+"Menu"))
 button.classList.add("button")
 });}
 
-function RightClickMenu (){
+function rightClickMenu (){
     window.oncontextmenu = (e) => {
         e.preventDefault()
-        console.log(e.pageX)   
+        menuContainer.style.left = e.pageX+"px";
+        menuContainer.style.top = e.pageY+"px";
+        menuBuilder();
 }
 }
-RightClickMenu()
+rightClickMenu()
