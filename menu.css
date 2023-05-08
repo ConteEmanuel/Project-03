@@ -7,6 +7,8 @@
     width: 118px;
     height: 116px;
     border-radius: 37%;
+    position: absolute;
+    transform: translate(-50%,-50%);
 }
 .button{
     text-align: center;
