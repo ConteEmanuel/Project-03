@@ -1,0 +1,27 @@
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    width: 118px;
+    height: 116px;
+    border-radius: 37%;
+}
+.button{
+    text-align: center;
+    width: 76px;
+    height: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    color:white;
+    padding: 6px;
+    margin: 1.4px;
+    border: 0.6px solid white;
+    border-radius: 37%;
+}
+.secondButton{
+    width: 98px;
+    border-radius: 37%;
+}
