@@ -10,8 +10,8 @@ function gridBuilder(){
         let divCell = document.createElement('div');
         cellContainer.append(divCell);
         divCell.classList.add('cell');
-        divCell.style.width = 220/cellRow + "px";
-        divCell.style.height = 220/cellRow + "px";
+        divCell.style.width = 760/cellRow + "px";
+        divCell.style.height = 760/cellRow + "px";
         cell-=1;
     }
 }
