@@ -1,9 +1,11 @@
-const arrayMenu =["paint","change","more",]
-const menuContainer = document.createElement('div')
-document.body.append(menuContainer)
+const arrayMenu =["paint","change","more",] // from menuBuilder
+const menuContainer = document.createElement('div') // from menuBuilder
+
+function menuBuilder()
+{document.body.append(menuContainer) //Menu added
 menuContainer.classList.add("menu")
 
-arrayMenu.forEach(element => {
+arrayMenu.forEach(element => { //Button added
 const button = document.createElement('div')
 menuContainer.appendChild(button)
 button.textContent=element
@@ -12,4 +14,12 @@ if (element == arrayMenu[1]){
 }
 button.setAttribute('id', (element+"Menu"))
 button.classList.add("button")
-});
+});}
+
+function RightClickMenu (){
+    window.oncontextmenu = (e) => {
+        e.preventDefault()
+        console.log(e.pageX)   
+}
+}
+RightClickMenu()
