@@ -16,3 +16,16 @@ function gridBuilder(){
     }
 }
 gridBuilder()
+function defaultColor(e){
+    e.target.classList.add('blackColor')
+}
+
+function mouseOverGrid(){
+    cellContainer.addEventListener('mouseover', 
+    function (e) {
+      defaultColor(e);
+    },
+    { capture: false }
+  );
+}
+mouseOverGrid()
