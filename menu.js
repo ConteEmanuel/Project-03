@@ -21,8 +21,9 @@ function rightClickMenu() { // set cords for menu
         e.preventDefault();
         menuContainer.style.left = e.pageX + "px";
         menuContainer.style.top = e.pageY + "px";
+        menuContainer.classList.toggle('none')
     };
 }
-menuContainer.style.left = "-100px"; //Hide menu at load
+menuContainer.classList.toggle('none')//Hide menu at load
 menuBuilder();
 rightClickMenu();
