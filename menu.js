@@ -4,6 +4,7 @@ const menuContainer = document.createElement("div"); // from menuBuilder
 function menuBuilder() {    //Menu Structure Builder
     document.body.append(menuContainer);
     menuContainer.classList.toggle("menu");
+    menuContainer.classList.toggle('none')
     menuButtons.forEach((element) => {  // Button Builder
         const button = document.createElement("div");
         menuContainer.appendChild(button);
@@ -22,9 +23,10 @@ function rightClickMenu() { // set cords for menu
         menuContainer.style.left = e.pageX + "px";
         menuContainer.style.top = e.pageY + "px";
         menuContainer.classList.toggle('none')
+        menuContainer.style.zIndex="1";
     };
 }
-menuContainer.style.left = "-100px"; //Hide menu at load
-
+//menuContainer.style.left = "-100px"; //Hide menu at load
+menuContainer.style.zIndex="-1";
 menuBuilder();
 rightClickMenu();
