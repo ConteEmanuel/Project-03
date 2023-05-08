@@ -3,7 +3,7 @@ const menuContainer = document.createElement("div"); // from menuBuilder
 
 function menuBuilder() {    //Menu Structure Builder
     document.body.append(menuContainer);
-    menuContainer.classList.add("menu");
+    menuContainer.classList.toggle("menu");
     menuButtons.forEach((element) => {  // Button Builder
         const button = document.createElement("div");
         menuContainer.appendChild(button);
@@ -24,6 +24,7 @@ function rightClickMenu() { // set cords for menu
         menuContainer.classList.toggle('none')
     };
 }
-menuContainer.classList.toggle('none')//Hide menu at load
+menuContainer.style.left = "-100px"; //Hide menu at load
+
 menuBuilder();
 rightClickMenu();
