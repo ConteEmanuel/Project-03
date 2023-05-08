@@ -1,0 +1,9 @@
+.cellContainer{
+    box-sizing: border-box;
+    border: 0.5px solid #1d1c1c;
+}
+.cell{
+    box-sizing: border-box;
+    border: 0.5px solid #888888;
+    background-color: #ffffff;
+}
