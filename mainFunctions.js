@@ -2,9 +2,3 @@ gridBuilder();
 mouseOverGrid();
 menuBuilder();
 rightClickMenu();
-
-
-
-
-
-

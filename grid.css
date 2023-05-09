@@ -1,17 +1,17 @@
-.cellContainer{
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-    width: 760px;
+.cellContainer {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  width: 760px;
 }
-.cell{
-    box-sizing: border-box;
-    border: 0.2px solid red;
-    background-color: #ffffff;
+.cell {
+  box-sizing: border-box;
+  border: 0.2px solid red;
+  background-color: #ffffff;
 }
-.defaultBlackColor{
-    background-color: #000000;
+.defaultBlackColor {
+  background-color: #000000;
 }
-.deleteWhiteColor{
-    background-color: #ffffff;
+.deleteWhiteColor {
+  background-color: #ffffff;
 }
