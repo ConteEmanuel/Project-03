@@ -3,9 +3,11 @@ function whiteOrBlack() {
     whiteButton.onclick = (e) => {
         if (cursorColor == "black") {
             cursorColor = "white";
+            whiteButton.textContent="black";
         } else {
-    cursorColor = "black";
-    }
+            cursorColor = "black";
+            whiteButton.textContent="white";
+        }
     menuContainer.classList.toggle("none");
     };
 }
