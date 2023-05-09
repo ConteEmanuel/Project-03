@@ -4,15 +4,14 @@
     flex-wrap: wrap;
     width: 760px;
 }
-
 .cell{
     box-sizing: border-box;
     border: 0.2px solid red;
     background-color: #ffffff;
 }
-.whiteDeleteColor{
-    background-color: #ffffff;
-}
 .defaultBlackColor{
     background-color: #000000;
+}
+.deleteWhiteColor{
+    background-color: #ffffff;
 }
