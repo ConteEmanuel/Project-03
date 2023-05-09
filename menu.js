@@ -1,4 +1,4 @@
-const menuButtons = ["white", "change", "more"]; // from menuBuilder
+const menuButtons = ["white", "change", "grid"]; // from menuBuilder
 const menuContainer = document.createElement("div"); // from menuBuilder
 
 function menuBuilder() {
@@ -28,7 +28,8 @@ function rightClickMenu() {
     menuContainer.style.top = e.pageY + "px";
     menuContainer.classList.toggle("none");
   };
-  whiteOrBlack();
+  whiteOrBlackButton();
+  gridResolutionButton();
 }
 //menuContainer.style.left = "-100px"; //Hide menu at load
 //menuBuilder();
