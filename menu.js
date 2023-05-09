@@ -12,7 +12,7 @@ function menuBuilder() {    //Menu Structure Builder
         if (element == menuButtons[1]) { // Set a Center bigger button
             button.classList.add("centerButton");
     }
-    button.setAttribute("id", element + "Menu"); //id for future use
+    button.setAttribute("id", element + "Button"); //id for future use
     button.classList.add("button");
     });
 }
@@ -28,5 +28,5 @@ function rightClickMenu() { // set cords for menu
 }
 //menuContainer.style.left = "-100px"; //Hide menu at load
 menuContainer.style.zIndex="-1";
-menuBuilder();
-rightClickMenu();
+//menuBuilder();
+//rightClickMenu();

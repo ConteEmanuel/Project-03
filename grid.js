@@ -15,17 +15,17 @@ function gridBuilder(){
         cell-=1;
     }
 }
-gridBuilder()
-function defaultColor(e){
-    e.target.classList.add('blackColor')
+//gridBuilder()
+function defaultBlackColor(e){
+    e.target.classList.add('defaultBlackColor')
 }
 
 function mouseOverGrid(){
     cellContainer.addEventListener('mouseover', 
     function (e) {
-      defaultColor(e);
+      defaultBlackColor(e);
     },
     { capture: false }
   );
 }
-mouseOverGrid()
+//mouseOverGrid();
