@@ -1,4 +1,4 @@
-const menuButtons = ["paint", "change", "more"]; // from menuBuilder
+const menuButtons = ["white", "change", "more"]; // from menuBuilder
 const menuContainer = document.createElement("div"); // from menuBuilder
 
 function menuBuilder() {    //Menu Structure Builder
@@ -23,10 +23,10 @@ function rightClickMenu() { // set cords for menu
         menuContainer.style.left = e.pageX + "px";
         menuContainer.style.top = e.pageY + "px";
         menuContainer.classList.toggle('none')
-        menuContainer.style.zIndex="1";
+
     };
+    whiteOrBlack();
 }
 //menuContainer.style.left = "-100px"; //Hide menu at load
-menuContainer.style.zIndex="-1";
 //menuBuilder();
 //rightClickMenu();
