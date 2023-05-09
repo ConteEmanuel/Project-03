@@ -2,7 +2,8 @@ const cellContainer = document.createElement('div');
 document.body.append(cellContainer);
 cellContainer.classList.add('cellContainer');
 let cellRow=16
-,   cell="";
+,   cell=""
+,   cursorColor ="black";
 
 function gridBuilder(){
     cell = cellRow * cellRow;
@@ -18,12 +19,25 @@ function gridBuilder(){
 //gridBuilder()
 function defaultBlackColor(e){
     e.target.classList.add('defaultBlackColor')
+    e.target.classList.remove('deleteWhiteColor')
+  }
+function deleteWhiteColor(e){
+  e.target.classList.add('deleteWhiteColor')
+  e.target.classList.remove('defaultBlackColor')
 }
+
 
 function mouseOverGrid(){
     cellContainer.addEventListener('mouseover', 
     function (e) {
-      defaultBlackColor(e);
+      switch  (cursorColor){
+        case "black":
+          defaultBlackColor(e);
+          break
+        case "white":
+          deleteWhiteColor(e);
+          break
+      }
     },
     { capture: false }
   );
