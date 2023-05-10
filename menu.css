@@ -3,29 +3,31 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: orange;
-  width: 118px;
-  height: 116px;
-  border-radius: 37%;
+  gap: 6px;
+  background-color: #ffffff; 
+  width: 121px;
+  height: 126px;
+  border: 1px solid rgb(216, 25, 25);
+  border-radius: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
 }
 .button {
   text-align: center;
-  width: 78px;
+  width: 56px;
   height: 18px;
   text-transform: capitalize;
-  font-weight: 600;
-  font-size: 16px;
-  color: white;
-  padding: 6px;
-  margin: 1.6px;
-  border: 0.6px solid white;
-  border-radius: 37%;
+  font-weight: 800;
+  font-size: 20px;
+  color:rgb(216, 25, 25);
+  padding: 4px;
+  border: 0.6px solid rgb(216, 25, 25);
+  border-radius: 17%;
 }
 .centerButton {
-  width: 100px;
-  border-radius: 37%;
+  width: 89px;
+  height: 22px;
+  border-radius: 22%;
 }
 .none {
   display: none;
