@@ -33,6 +33,15 @@ function deleteWhiteColor(e) {
   backgroundGrid.classList.add('deleteWhiteColor');
   backgroundGrid.classList.remove('defaultBlackColor');
 }
+function randomColorChange(e)  {
+  e.target.style.backgroundColor = randomColor;
+  e.target.classList.remove('deleteWhiteColor');
+  e.target.classList.remove('defaultBlackColor');
+  backgroundGrid.style.backgroundColor = randomColor;
+  backgroundGrid.classList.remove('deleteWhiteColor');
+  backgroundGrid.classList.remove('defaultBlackColor');
+
+}
 
 function mouseOverGrid() {
   cellContainer.addEventListener(
@@ -44,6 +53,9 @@ function mouseOverGrid() {
           break;
         case "white":
           deleteWhiteColor(e);
+          break;
+          case "random":
+            randomColorChange(e);
           break;
       }
     },
