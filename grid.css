@@ -17,7 +17,6 @@
   box-sizing: border-box;
   border: 1px dashed #960f0f;
   background-color: #ffffff;
-  box-sizing:border-box;
   z-index: 4;
   margin: 0; /*This fix grid decimals, When they are "Re-builded"*/
   overflow: hidden;
