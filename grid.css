@@ -9,6 +9,7 @@
   height: 760px;
   z-index: 2;
   overflow: hidden;
+  margin: 0;/*This fix grid decimals, When they are "Re-builded"*/
 }
 .cell {
   box-sizing: border-box;
@@ -16,7 +17,7 @@
   background-color: #ffffff;
   box-sizing:border-box;
   z-index: 4;
-  margin: 0; /*This fix grid decimals, like offsetWidth or something...*/
+  margin: 0; /*This fix grid decimals, When they are "Re-builded"*/
 
 }
 .defaultBlackColor {
