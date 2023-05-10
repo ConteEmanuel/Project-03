@@ -1,13 +1,23 @@
 .cellContainer {
-  box-sizing: border-box;
+  box-sizing:border-box;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   flex-wrap: wrap;
   width: 760px;
+  height: 760px;
+  z-index: 2;
+  overflow: hidden;
 }
 .cell {
   box-sizing: border-box;
-  border: 0.2px solid red;
+  border: 1px dashed #960f0f;
   background-color: #ffffff;
+  box-sizing:border-box;
+  z-index: 4;
+  margin: 0; /*This fix grid decimals, like offsetWidth or something...*/
+
 }
 .defaultBlackColor {
   background-color: #000000;
