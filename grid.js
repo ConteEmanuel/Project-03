@@ -17,22 +17,16 @@ function gridBuilder() {
 function defaultBlackColor(e) {
   e.target.classList.add("defaultBlackColor");
   e.target.classList.remove("deleteWhiteColor");
-  backgroundGrid.classList.add("defaultBlackColor");
-  backgroundGrid.classList.remove("deleteWhiteColor");
+
 }
 function deleteWhiteColor(e) {
   e.target.classList.add("deleteWhiteColor");
   e.target.classList.remove("defaultBlackColor");
-  backgroundGrid.classList.add("deleteWhiteColor");
-  backgroundGrid.classList.remove("defaultBlackColor");
 }
 function randomColorChange(e) {
   e.target.style.backgroundColor = randomColor;
   e.target.classList.remove("deleteWhiteColor");
   e.target.classList.remove("defaultBlackColor");
-  backgroundGrid.style.backgroundColor = randomColor;
-  backgroundGrid.classList.remove("deleteWhiteColor");
-  backgroundGrid.classList.remove("defaultBlackColor");
 }
 
 function mouseOverGrid() {
