@@ -5,11 +5,13 @@
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
-  width: 760px;
-  height: 760px;
+  width: 500px;
+  height: 500px;
   z-index: 2;
   overflow: hidden;
   margin: 0;/*This fix grid decimals, When they are "Re-builded"*/
+  border-radius: 26px;
+  background-color: #ffffff !important;
 }
 .cell {
   box-sizing: border-box;
@@ -18,7 +20,7 @@
   box-sizing:border-box;
   z-index: 4;
   margin: 0; /*This fix grid decimals, When they are "Re-builded"*/
-
+  overflow: hidden;
 }
 .defaultBlackColor {
   background-color: #000000 !important;
