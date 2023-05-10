@@ -25,9 +25,6 @@ function rightClickMenu() {
     menuContainer.style.zIndex = "5";
     menuContainer.style.left = e.pageX + "px";
     menuContainer.style.top = e.pageY + "px";
-    let x= e.pageX;
-    let y= e.pageY;
-    console.log(x);
     menuContainer.classList.toggle("none");
   };
   whiteOrBlackButton(); //This 3() are te possible button alternatives
