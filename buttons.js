@@ -24,7 +24,7 @@ function gridResolutionButton() {
     cellRow = -1;
     for (
       cellRow;
-      cellRow > 100 || cellRow < 0 || isNaN(cellRow);
+      cellRow > 100 || cellRow < 0 || isNaN(cellRow );
       cellRow = prompt("enter 1 to 100 number", "not 101")
     ) {
       cellRow = Number(cellRow);
