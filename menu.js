@@ -24,6 +24,7 @@ function rightClickMenu() {
   // set cords for menu
   window.oncontextmenu = (e) => {
     e.preventDefault();
+    menuContainer.style.zIndex="5";
     menuContainer.style.left = e.pageX + "px";
     menuContainer.style.top = e.pageY + "px";
     menuContainer.classList.toggle("none");
