@@ -1,8 +1,4 @@
-document.body.append(backgroundGrid);
-backgroundGrid.classList.add("defaultBlackColor"); // this helps to fix grid overflow effect
-backgroundGrid.style.zIndex = "3"; // its between grid and gridCellContainer
-
-backgroundGrid.append(cellContainer);
+body.append(cellContainer);
 cellContainer.classList.add("cellContainer");
 
 function gridBuilder() {
@@ -12,8 +8,8 @@ function gridBuilder() {
     let divCell = document.createElement("div");
     cellContainer.append(divCell);
     divCell.classList.add("cell");
-    divCell.style.width = Math.trunc(760 / cellRow) + "px"; // trunc helps fixing grid Differences
-    divCell.style.height = Math.trunc(760 / cellRow) + "px";
+    divCell.style.width = Math.trunc(500 / cellRow) + "px"; // trunc helps fixing grid Differences
+    divCell.style.height = Math.trunc(500 / cellRow) + "px";
     cell -= 1;
   }
 }
