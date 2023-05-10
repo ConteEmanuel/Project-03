@@ -50,6 +50,6 @@ function mouseOverGrid() {
     },
     { capture: false }
   );
-  if (cursorColor== "random")
-  cursorColor= "black";
+  if (cursorColor== "random") //This set next state color on white to delete randomColors
+  cursorColor= "white";
 }
