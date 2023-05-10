@@ -1,3 +1,5 @@
+let randomColor;
+
 function whiteOrBlackButton() {
   const whiteButton = document.getElementById("whiteButton"); //build button from menuArray[0]
   whiteButton.onclick = (e) => {
@@ -34,3 +36,16 @@ function gridResolutionButton() {
     gridBuilder();
   };
 }
+function changeColorButton() {
+  const changeButton = document.getElementById("changeButton"); //build button from menuArray[0]
+  changeButton.onclick = (e) => {
+    //set next cursor state and next button text
+    let a = randomColor;
+    while(randomColor=="#000000" || randomColor == "#fffffff" || randomColor == a){
+      randomColor= String(Math.floor((Math.random()) * 1000000));
+      cursorColor="random";
+      randomColor="#"+randomColor;}
+      menuContainer.classList.toggle("none"); //close menu
+    }
+
+  };
