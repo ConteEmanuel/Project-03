@@ -31,6 +31,7 @@ function rightClickMenu() {
   };
   whiteOrBlackButton();
   gridResolutionButton();
+  changeColorButton();
 }
 //menuContainer.style.left = "-100px"; //Hide menu at load
 //menuBuilder();
