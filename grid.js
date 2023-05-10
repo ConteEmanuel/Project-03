@@ -50,4 +50,6 @@ function mouseOverGrid() {
     },
     { capture: false }
   );
+  if (cursorColor== "random")
+  cursorColor= "black";
 }
