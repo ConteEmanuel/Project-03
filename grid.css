@@ -21,8 +21,8 @@
 
 }
 .defaultBlackColor {
-  background-color: #000000;
+  background-color: #000000 !important;
 }
 .deleteWhiteColor {
-  background-color: #ffffff;
+  background-color: #ffffff !important;
 }
