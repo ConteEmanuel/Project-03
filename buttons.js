@@ -1,5 +1,3 @@
-let randomColor;
-
 function whiteOrBlackButton() {
   const whiteButton = document.getElementById("whiteButton"); //build button from menuArray[0]
   whiteButton.onclick = (e) => {
@@ -15,6 +13,7 @@ function whiteOrBlackButton() {
   };
 }
 function unBuildGrid() {
+  //This remove all Child Cells Div
   while (cellContainer.firstChild) {
     cellContainer.removeChild(cellContainer.firstChild);
   }
@@ -26,26 +25,31 @@ function gridResolutionButton() {
     cellRow = -1;
     for (
       cellRow;
-      cellRow > 100 || cellRow < 0 || isNaN(cellRow );
-      cellRow = prompt("enter 1 to 100 number", "not 101")
+      cellRow > 100 || cellRow < 0 || isNaN(cellRow); //keep prompt until get a number from 1 to 100
+      cellRow = prompt("Choose Grid Resolution", "Enter a number from 1 to 100")
     ) {
       cellRow = Number(cellRow);
     }
     menuContainer.classList.toggle("none");
-    unBuildGrid();
+    unBuildGrid(); //unBuild + reBuild Grid
     gridBuilder();
   };
 }
 function changeColorButton() {
-  const changeButton = document.getElementById("changeButton"); //build button from menuArray[0]
+  const changeButton = document.getElementById("changeButton");
   changeButton.onclick = (e) => {
     //set next cursor state and next button text
     let a = randomColor;
-    while(randomColor=="#000000" || randomColor == "#fffffff" || randomColor == a){
-      randomColor= String(Math.floor((Math.random()) * 1000000));
-      cursorColor="random";
-      randomColor="#"+randomColor;}
-      menuContainer.classList.toggle("none"); //close menu
-    }
-
+    while (
+      randomColor == "#000000" ||
+      randomColor == "#fffffff" ||
+      randomColor == a
+    ) {
+      //a helps to change the last color used
+      randomColor = String(Math.floor(Math.random() * 1000000));
+      cursorColor = "random";
+      randomColor = "#" + randomColor;
+    } // this make the #sixDigits RGB format
+    menuContainer.classList.toggle("none"); //close menu
   };
+}

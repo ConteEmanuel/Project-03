@@ -1,8 +1,5 @@
-const menuButtons = ["white", "change", "grid"]; // from menuBuilder
-const menuContainer = document.createElement("div"); // from menuBuilder
-
 function menuBuilder() {
-  //Menu Structure Builder
+  //  Menu Structure Builder
   document.body.append(menuContainer);
   menuContainer.classList.toggle("menu");
   menuContainer.classList.toggle("none");
@@ -12,7 +9,7 @@ function menuBuilder() {
     menuContainer.appendChild(button);
     button.textContent = element;
     if (element == menuButtons[1]) {
-      // Set a Center bigger button
+      // Set a Center Button with a different Style
       button.classList.add("centerButton");
     }
     button.setAttribute("id", element + "Button"); //id for future use
@@ -21,18 +18,16 @@ function menuBuilder() {
 }
 
 function rightClickMenu() {
-  // set cords for menu
+  //This is the "Open Menu" function
   window.oncontextmenu = (e) => {
+    // set current cords for menu
     e.preventDefault();
-    menuContainer.style.zIndex="5";
+    menuContainer.style.zIndex = "5";
     menuContainer.style.left = e.pageX + "px";
     menuContainer.style.top = e.pageY + "px";
     menuContainer.classList.toggle("none");
   };
-  whiteOrBlackButton();
+  whiteOrBlackButton(); //This 3() are te possible button alternatives
   gridResolutionButton();
   changeColorButton();
 }
-//menuContainer.style.left = "-100px"; //Hide menu at load
-//menuBuilder();
-//rightClickMenu();
