@@ -10,4 +10,8 @@ body {
   height: 100vh;
   background-color: rgb(43, 145, 158);
   overflow: hidden; /* for mouse over*/
+  background-image: url(/etchAsketch.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 695px;
 }
