@@ -1,4 +1,7 @@
-gridBuilder();
-mouseOverGrid();
-menuBuilder();
-rightClickMenu();
+function main() {
+  gridBuilder();
+  mouseOverGrid();
+  menuBuilder();
+  rightClickMenu();
+}
+main();
