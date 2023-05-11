@@ -1,8 +1,8 @@
 body.append(cellContainer);
 cellContainer.classList.add("cellContainer");
 document.body.append(instructions);
-instructions.textContent="RightClick to Start";
-instructions.classList.add('absolutePosition');
+instructions.textContent = "RightClick to Start";
+instructions.classList.add("absolutePosition");
 
 function gridBuilder() {
   //gridBuilder with "n" cells, CellsRows <=  100
@@ -20,7 +20,6 @@ function gridBuilder() {
 function defaultBlackColor(e) {
   e.target.classList.add("defaultBlackColor");
   e.target.classList.remove("deleteWhiteColor");
-
 }
 function deleteWhiteColor(e) {
   e.target.classList.add("deleteWhiteColor");
@@ -53,6 +52,4 @@ function mouseOverGrid() {
     },
     { capture: false }
   );
-  if (cursorColor== "random") //This set next state color on white to delete randomColors
-  cursorColor= "white";
 }
