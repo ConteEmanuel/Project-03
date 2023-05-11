@@ -21,11 +21,14 @@
   text-transform: capitalize;
   font-weight: 800;
   font-size: 20px;
-  color:rgb(216, 25, 25);
+  color:#ffffff;
   padding: 4px;
-  border: 0.6px solid rgb(216, 25, 25);
+
   border-radius: 17%;
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,0.75) 0%, rgba(253,29,29,0.85) 50%, rgba(255,255,255,0.75) 100%);
 }
+
 .centerButton {
   width: 89px;
   height: 22px;

@@ -44,7 +44,7 @@ function gridResolutionButton() {
 }
 function changeColorButton() {
   const changeButton = document.getElementById("changeButton");
-  changeButton.onclick = (e) => {
+    changeButton.onclick = (e) => {
     //set next cursor state and next button text
     let a = randomColor;
     while (
