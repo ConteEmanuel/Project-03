@@ -4,9 +4,12 @@ function whiteOrBlackButton() {
     // This set WhiteColor Button Text only the first time
     whiteButton.textContent = "black";
     initialWhiteColor = 0;
+    cursorColor = "white";
+    lastColor = "black";
   }
+
   whiteButton.onclick = (e) => {
-      if (cursorColor != "random") {
+    if (cursorColor != "random") {
       lastColor = cursorColor;
     }
     //set next cursor state and next button text
