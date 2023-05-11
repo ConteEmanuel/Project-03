@@ -5,9 +5,7 @@ const menuContainer = document.createElement("div");
 const cellContainer = document.createElement("div");
 const instructions = document.createElement("div");
 let initialWhiteColor = 1;
-let cellRow = 16,
-  cell = "",
-  cursorColor = "white";
+let cellRow = 16;
+let cell, cursorColor;
 //from buttons.js
-let randomColor;
-let lastColor;
+let randomColor, lastColor;
