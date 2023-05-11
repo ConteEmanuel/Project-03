@@ -21,7 +21,7 @@ function rightClickMenu() {
   //This is the "Open Menu" function
   window.oncontextmenu = (e) => {
     // set current cords for menu
-    instructions.classList.add('none');
+    instructions.classList.add("none");
     e.preventDefault();
     menuContainer.style.zIndex = "5";
     menuContainer.style.left = e.pageX + "px";
@@ -30,5 +30,5 @@ function rightClickMenu() {
   };
   whiteOrBlackButton(); //This 3() are te possible button alternatives
   gridResolutionButton();
-  changeColorButton();
+  randomColorButton();
 }
