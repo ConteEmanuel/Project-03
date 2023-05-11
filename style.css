@@ -15,4 +15,13 @@ body {
   background-repeat: no-repeat;
   background-size: 695px;
 }
+.absolutePosition{
+  text-align: center;
+  background-color: red;
+  position: absolute;top: 50%; left: calc(50%-40px);
+  z-index: 6;
+  font-size: 44px;
+  padding: 8px 6px;
+  border-radius: 10px;
+}
 
