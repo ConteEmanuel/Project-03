@@ -8,7 +8,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: rgb(43, 145, 158);
+  background-color:hsl(186.78,57.21%,39.41%);
   overflow: hidden; /* for mouse over*/
   background-image: url(https://fenush.github.io/Project-03/etchAsketch.png);
   background-position: center;
@@ -17,7 +17,7 @@ body {
 }
 .absolutePosition{
   text-align: center;
-  background-color: red;
+  background-color:hsl(5.59,100%,54.43%);
   position: absolute;top: 47,21%; left: calc(50%-40px);
   z-index: 6;
   font-size: 44px;

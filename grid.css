@@ -11,19 +11,19 @@
   overflow: hidden;
   margin: 0;/*This fix grid decimals, When they are "Re-builded"*/
   border-radius: 26px;
-  background-color: #ffffff !important;
+  background-color: hsl(0,0%,100%) !important;
 }
 .cell {
   box-sizing: border-box;
-  border: 1px dashed #960f0f;
-  background-color: #ffffff;
+  border: 1px dashed hsl(0,81.82%,32.35%);
+  background-color: hsl(0,0%,100%);
   z-index: 4;
   margin: 0; /*This fix grid decimals, When they are "Re-builded"*/
   overflow: hidden;
 }
 .defaultBlackColor {
-  background-color: #000000 !important;
+  background-color:hsl(0,0%,0%) !important;
 }
 .deleteWhiteColor {
-  background-color: #ffffff !important;
+  background-color: hsl(0,0%,100%) !important;
 }
