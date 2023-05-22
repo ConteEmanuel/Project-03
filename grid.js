@@ -1,8 +1,10 @@
-body.append(cellContainer);
-cellContainer.classList.add("cellContainer");
-document.body.append(instructions);
-instructions.textContent = "RightClick to Start";
-instructions.classList.add("absolutePosition");
+function instruction() {
+  body.append(cellContainer);
+  cellContainer.classList.add("cellContainer");
+  document.body.append(instructions);
+  instructions.textContent = "RightClick to Start";
+  instructions.classList.add("absolutePosition");
+}
 
 function gridBuilder() {
   //gridBuilder with "n" cells, CellsRows <=  100

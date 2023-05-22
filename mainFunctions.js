@@ -1,4 +1,5 @@
 function main() {
+  instruction();
   gridBuilder();
   mouseOverGrid();
   menuBuilder();
